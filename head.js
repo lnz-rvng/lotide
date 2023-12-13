@@ -7,8 +7,8 @@ const assertEqual = function(actual, expected) {
 };
 
 const head = function(testArr) {
-  return(testArr[0]);
-}
+  return (testArr[0]);
+};
 
 assertEqual(head([1, 2, 3, 4]), 1);
 assertEqual(head(["Lighthouse Labs", "Lighthouse", "Labs"]), "Lighthouse Labs");
