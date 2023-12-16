@@ -18,14 +18,14 @@ const assertArraysEquals = function(arr1, arr2) {
   }
 };
 
-const middle = function (arr) {
+const middle = function(arr) {
   const middleArray = [];
   if (arr !== undefined) {
     if (arr.length % 2 === 1) {
       const midIndex = Math.floor(arr.length / 2);
       const midElements = arr[midIndex];
       middleArray.push(midElements);
-    } else if(arr.length % 2 === 0) {
+    } else if (arr.length % 2 === 0) {
       const midIndex = arr.length / 2;
       const midElement1 = arr[midIndex - 1];
       const midElement2 = arr[midIndex];
@@ -44,4 +44,4 @@ assertArraysEquals(middle([1, 2, 3, 4, 5]), [3]);
 assertArraysEquals(middle([1, 2, 3, 4]), [2, 3]);
 assertArraysEquals(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
 
-assertArraysEquals(middle([1, 2, 3]), true)
+assertArraysEquals(middle([1, 2, 3]), true);
