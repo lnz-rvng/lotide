@@ -6,20 +6,20 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(str, charToCount) {
+const countLetters = function(str) {
   let result = {};
 
   for (let char of str) {
-  
-    if (charToCount[char]) {
-      if (result[char]) {
-        result[char] += 1;
-      } else {
-        result[char] = 1;
-      }
-    }
-  }
+    console.log(char);
 
+    if (result[char]) {
+      result[char] += 1;
+    } else {
+      result[char] = 1;
+    }
+
+  }
+  
   return result;
 };
 
