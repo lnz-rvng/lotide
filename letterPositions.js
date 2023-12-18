@@ -5,10 +5,12 @@ const letterPositions = function(sentence) {
     const char = sentence[i];
     console.log(char);
 
-    if (results[char]) {
-      results[char].push(i);
-    } else {
-      results[char] = [i];
+    if (char !== " ") {
+      if (results[char]) {
+        results[char].push(i);
+      } else {
+        results[char] = [i];
+      }
     }
   }
 
@@ -35,7 +37,7 @@ const assertArraysEquals = function(arr1, arr2) {
   }
 };
 
-assertArraysEquals(letterPositions("hello").e, [1]);
-assertArraysEquals(letterPositions("hello").h, [0]);
-assertArraysEquals(letterPositions("hello").l, [2, 3]);
+const words = letterPositions("lighthouse in a house");
+assertArraysEquals((words).l, [0]);
+
 
