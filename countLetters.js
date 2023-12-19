@@ -25,12 +25,9 @@ const countLetters = function(str) {
 
 const sentence = "this is a number";
 
-const result1 = countLetters(sentence, {
-  "l": true,
-  "h": true,
-  "z": true
-});
-
-assertEqual(result1["l"], 1);
-assertEqual(result1["h"], 2);
-assertEqual(result1["z"], 1);
+const result1 = countLetters(sentence);
+  
+console.log(result1);
+assertEqual(result1["i"], 2);
+assertEqual(result1["h"], 1);
+assertEqual(result1[" "], 3);
