@@ -37,7 +37,8 @@ const assertArraysEquals = function(arr1, arr2) {
   }
 };
 
-const words = letterPositions("lighthouse in a house");
-assertArraysEquals((words).l, [0]);
+const words = letterPositions("hello");
+console.log(words);
+assertArraysEquals((words).l, [2, 3]);
 
 
