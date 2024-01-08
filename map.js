@@ -31,15 +31,15 @@ const map = function(array, callback) {
 };
 
 const results1 = map(words, word => word[0]);
-assertArraysEquals(results1, ['g', 'c', 't', 'm', 't']);
+assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
 
 const emptyArray = [];
 const results2 = map(emptyArray, item => item * 2);
-assertArraysEquals(results2, []);
+assertArraysEqual(results2, []);
 
 const numbers = [1, 2, 3, 4, 5];
 const results3 = map(numbers, num => num * num);
-assertArraysEquals(results3, [1, 4, 9, 16, 25]);
+assertArraysEqual(results3, [1, 4, 9, 16, 25]);
 
 const objects = [
   { name: 'Alice', age: 25 },
@@ -47,9 +47,9 @@ const objects = [
   { name: 'Charlie', age: 22 }
 ];
 const results4 = map(objects, obj => obj.name);
-assertArraysEquals(results4, ['Alice', 'Bob', 'Charlie']);
+assertArraysEqual(results4, ['Alice', 'Bob', 'Charlie']);
 
 const boolArray = [true, false, true, false];
 const results5 = map(boolArray, bool => !bool);
-assertArraysEquals(results5, [false, true, false, true]);
+assertArraysEqual(results5, [false, true, false, true]);
 
