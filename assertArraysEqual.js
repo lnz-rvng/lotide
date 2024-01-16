@@ -18,6 +18,6 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-assertArraysEquals([1, 2, 3], [1, 2, 3]);
-assertArraysEquals([1, 2, 3], [3, 2, 1, 4]);
-assertArraysEquals(["1", "2", "3"], ["1", "2", "3"]);
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
+assertArraysEqual([3, 2, 1, 4], [3, 2, 1, 4]);
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
