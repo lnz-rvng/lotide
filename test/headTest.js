@@ -11,7 +11,7 @@ describe("#head", () => {
   });
 
   it('returns undefined for []', () => {
-    assert.isUndefined(head([]), 1);
+    assert.isUndefined(head([]), []);
   });
 
   it("returns '5' for ['5']", () => {
