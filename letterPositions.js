@@ -3,7 +3,6 @@ const letterPositions = function(sentence) {
 
   for (let i = 0; i < sentence.length; i++) {
     const char = sentence[i];
-    console.log(char);
 
     if (char !== " ") {
       if (results[char]) {

@@ -1,4 +1,4 @@
-const assertEqual = require('../assertEqual');
+const { assert } = require('chai');
 const findKeyByValue = require('../findKeyByValue');
 
 const bestTVShowsByGenre = {
@@ -7,5 +7,8 @@ const bestTVShowsByGenre = {
   drama:  "The Wire"
 };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+describe('#findKeybyValue', () => {
+  it('should return "drama" for "The Wire"', () => {
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+  });
+});

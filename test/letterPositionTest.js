@@ -1,6 +1,10 @@
-const assertArraysEqual = require('../assertArraysEqual');
+const { assert } = require('chai');
 const letterPositions = require('../letterPositions');
 
-const words = letterPositions("hello");
-console.log(words);
-assertArraysEqual((words).l, [2, 3]);
+describe('#letterPositions', () => {
+  it('should return [2, 3] for l', () => {
+    const words = letterPositions("hello");
+    assert.deepEqual((words).l, [2, 3]);
+  });
+});
+

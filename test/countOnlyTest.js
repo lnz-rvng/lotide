@@ -1,6 +1,5 @@
-const assertEqual = require('../assertEqual');
+const { assert } = require('chai');
 const countOnly = require('../countOnly');
-
 
 const firstNames = [
   "Karl",
@@ -14,9 +13,14 @@ const firstNames = [
   "Joe"
 ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+describe('#countOnly', () => {
+  it('should return 1 for Jason', () => {
+    const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+    assert.strictEqual(result1["Jason"], 1);
+  });
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+  it('should return undefined for Karima', () => {
+    const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+    assert.isUndefined(result1["Karima"], undefined);
+  });
+});

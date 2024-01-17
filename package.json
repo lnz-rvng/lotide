@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "name": "@lanzyy/lotide",
+  "version": "1.0.2",
+  "description": "Project Lotide - A Lodash Clone",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/lnz-rvng/lotide.git"
   },
-  "author": "",
+  "author": "Lance Irving Manzanal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lnz-rvng/lotide/issues"
