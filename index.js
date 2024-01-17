@@ -32,6 +32,6 @@ module.exports = {
   flatten: flatten,
   letterPositions: letterPositions,
   map: map,
-  takeUntil: takeUntil
+  takeUntil: takeUntil,
   without: without
 };
