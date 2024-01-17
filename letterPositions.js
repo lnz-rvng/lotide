@@ -39,6 +39,6 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const words = letterPositions("hello");
 console.log(words);
-assertArraysEquals((words).l, [2, 3]);
+assertArraysEqual((words).l, [2, 3]);
 
 
